@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnighty Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo"><img src="logo midnighty.png" alt="Logo do Midnighty Studio"></a>
+        <ul>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="theme-toggle">
+                <span id="theme-icon" role="img" aria-label="Tema Claro">🌞</span>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="introducao" data-aos="fade-up">
+        <h1>Bem-vindo ao Midnighty Studio</h1>
+        <p>TRANSFORMANDO IDEIAS EM MUNDOS</p>
+    </section>
+    <img src="midnighty.png" alt="Descrição da Imagem" class="imagem-fullwidth">
+<section id="sobre" data-aos="fade-up">
+    <h3>Sobre o Studio</h3>
+    <p>Fundado em 2020 e entrando na ativa em 2021, desde seu primeiro projeto sempre almejou como objetivo entregar a maior imersão e padrão de qualidade possível, trabalhando em projetos ambiciosos, desde projetos próprios como também projetos envolvendo parcerias. Com anos de experiência e colaboração, seus desenvolvedores buscam trazer o melhor nível artístico que um jogo possa ter mesmo sendo uma equipe pequena.</p>
+</section>
+        <section id="projetos" data-aos="fade-up">
+        <h3>Projetos</h3>
+        <div class="projects">
+            <div class="project">
+                <img src="pudimland chalé.webp" alt="Projeto 1">
+                <p>Em parceria com o influenciador Ileo0x, PudimLand leva você a um mundo virtual realista dentro do Roblox. Explore um chalé acolhedor e complete tarefas para mantê-lo de pé. Com mais de 150 mil visitas e 2900 likes, PudimLand tem se destacado como um dos favoritos da comunidade, proporcionando uma experiência incrível para os jogadores.</p>
+            </div>
+            <div class="project">
+                <img src="scientist simulator.webp" alt="Projeto 2">
+                <p>Scientist Simulator é um projeto em parceria com o influenciador DPSpedro. No jogo, você assume o papel de um cientista e o objetivo é montar a melhor unidade possível usando partes de diversos personagens. À medida que você evolui, vai desbloqueando novas áreas e enfrentando inimigos. Explore um universo, experimente diferentes combinações e veja até onde sua criatividade pode te levar..</p>
+            </div>
+            <div class="project">
+                <img src="ghetto.webp" alt="Projeto 3">
+                <p>O Ghetto é um projeto independente do Midnighty, que busca trazer uma experiência imersiva em uma cidade controlada por gangues. Para sobreviver nesse ambiente hostil, o jogador precisará desenvolver habilidades de sobrevivência, formar grupos, e juntar dinheiro para conseguir equipamentos e veículos cada vez melhores.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato" data-aos="fade-up">
+        <h3>Contato</h3>
+        <p>Entre em contato para saber mais sobre nossos projetos e como podemos colaborar.</p>
+        <p>Email: contato@midnightystudio.com</p>
+    </section>
+<section id="sobre-nos" data-aos="fade-up" class="sobre-nos-section">
+    <h3>Sobre Nós</h3>
+    <div class="sobre-nos-container">
+        <div class="sobre-nos-item">
+            <img src="luis.jpeg" alt="Luís Henrique" class="rounded-image">
+            <div class="sobre-nos-texto">
+                <h4>Luís Henrique</h4>
+                <p>Modelador 3D com mais de 4 anos de experiência, especializado em realismo e sempre em busca de novos desafios. Possui também habilidades em game design, o que permite transformar ideias criativas em experiências imersivas. Cursando Engenharia de Software. <br> Portfólio pessoal: <a href="https://donnk3d.artstation.com/">https://donnk3d.artstation.com/</a></p>
+            </div>
+        </div>
+        <div class="sobre-nos-item">
+            <img src="nicolas.jpg" alt="Nicolas" class="rounded-image">
+            <div class="sobre-nos-texto">
+                <h4>Nicolas</h4>
+                <p>Programador desde 2019 e animador desde 2021, envolvido em projetos bastante diversos desde projetos voltados ao público infantil até projetos semi/realistas, buscando sempre surpreender com qualidade e detalhes. Cursando Engenharia de Software.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const themeToggle = document.querySelector('.theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains('dark-theme')) {
+                themeIcon.textContent = '🌙'; // Muda para ícone de lua
+            } else {
+                themeIcon.textContent = '🌞'; // Muda para ícone de sol
+            }
+        });
+    </script>
+</body>
+</html>
+
